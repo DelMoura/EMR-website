@@ -2,8 +2,10 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
+COPY ./start.py .
+COPY ./config.py .
 COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "app.py"]
+CMD ["python", "start.py"]
