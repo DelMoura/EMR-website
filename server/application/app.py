@@ -35,6 +35,6 @@ class CommentPost(Resource):
             data = ps.parse_args()
             UserModel(**data).save()  
        except NotUniqueError:
-           return {"message":"CPF is invalid"}
+           return {"message":"User is invalid"}
 
 

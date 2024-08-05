@@ -24,7 +24,7 @@ services:
     ports:
       - 5000:5000
     environment:
-      - FLASK_ENV=development
+      - FLASK_ENV=deployment
     restart: always
     depends_on:
       - mongo
