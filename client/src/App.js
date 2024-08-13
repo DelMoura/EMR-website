@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Container from '@mui/material/Container';
+import Header from './components/Header';
+import cover from './assets/programming_bg.jpg'
+import Banner from './components/Banner';
+import Noticias from './components/Noticias';
+import RedeSocial from './components/RedeSocial';
+import Contato from './components/Contato';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Este aqui é um Teste
-        </p>
-        <a
-          className="App-link"
-          href="!!!"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          !!!
-        </a>
-      </header>
-    </div>
+
+    <Container maxWidth={false} disableGutters sx={{ bgcolor: '#cfe8fc', height: '130em', width: '100%' }}>
+
+      <Header />
+
+      <Banner />
+
+      <Noticias />
+
+      <RedeSocial />
+
+      <Contato />
+
+    </Container>
+
   );
 }
 
