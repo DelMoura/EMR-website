@@ -1,4 +1,5 @@
 import { Box } from "@mui/material"
+import Campo from "./Campo"
 
 export default function Contato() {
     return (
@@ -11,6 +12,11 @@ export default function Contato() {
                 alignItems: 'center',
                 height: '35em'
             }}
-        />
+
+        >
+
+            <Campo />
+
+        </Box>
     )
 }
